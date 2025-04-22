@@ -73,6 +73,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Smooth scrolling for navigation links
+   document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        
+        if (targetId === '#') {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        } else {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
    
     
     // Implement a simple filter system for recipe categories
