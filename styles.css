@@ -1,19 +1,17 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Fredoka:wght@300;500&family=Great+Vibes&display=swap');
-
+/* Fonts */
 h1, h2 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Pacifico', cursive;  /* Changed to Pacifico font */
 }
 
 body, p, input, button {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Poppins', sans-serif;  /* Changed to Poppins font */
 }
 
 body {
   margin: 0;
-  font-family: 'Dancing Script', cursive;  
-  background: #090909;
-  color: #ffffff;
+  font-family: 'Dancing Script', cursive;
+  background: #2c2a2a;  /* Darker background */
+  color: #e8e8e8;  /* Lighter text color */
   padding-bottom: 40px;
 }
 
@@ -22,16 +20,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000000;
+  background: #111111;  /* Darker navbar background */
   padding: 15px 30px;
-  box-shadow: 0 0 10px #08f7fe;
+  box-shadow: 0 0 10px #00f7ff;  /* Changed shadow color */
   border-radius: 0 0 20px 20px;
 }
 
 .navbar .logo {
   font-size: 3rem;
   font-weight: bold;
-  color: #08f7fe;
+  color: #00f7ff;  /* Changed logo color */
 }
 
 .nav-links {
@@ -42,7 +40,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
-  color: #f806cc;
+  color: #ff2a94;  /* Changed text color */
   font-weight: 700;
   position: relative;
 }
@@ -52,7 +50,7 @@ body {
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #fe53bb;
+  background-color: #ff4cb3;  /* Changed hover color */
   left: 0;
   bottom: -5px;
   transition: width 0.3s ease;
@@ -63,13 +61,11 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #fe53bb;
+  color: #ff4cb3;  /* Changed hover color */
   transform: scale(1.05);
 }
 
-
 /* Hero Section */
-
 .hero {
   height: 50vh;
   background-image: url('https://i.pinimg.com/736x/17/c1/5a/17c15acb4661f8557d20319a8376f70e.jpg');
@@ -84,7 +80,7 @@ body {
 }
 
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);  /* Darker overlay */
   padding: 2.5rem;
   border-radius: 1rem;
 }
@@ -92,8 +88,8 @@ body {
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 15px;
-  color: #08f7fe;
-  text-shadow: 0 0 10px #08f7fe;
+  color: #00f7ff;  /* Changed color */
+  text-shadow: 0 0 10px #00f7ff;
 }
 
 .hero p {
@@ -105,17 +101,17 @@ body {
 .lovely-text {
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
-  color: #fe53bb;
+  color: #ff4cb3;  /* Changed color */
   text-align: center;
   margin: 40px auto 20px;
-  text-shadow: 2px 2px 10px #08f7fe;
+  text-shadow: 2px 2px 10px #00f7ff;  /* Changed shadow color */
   transition: transform 0.3s ease, text-shadow 0.3s ease;
   cursor: default;
 }
 
 .lovely-text:hover {
   transform: scale(1.05);
-  text-shadow: 0 0 15px #f806cc;
+  text-shadow: 0 0 15px #ff2a94;  /* Changed hover shadow */
 }
 
 /* Search Bar */
@@ -134,20 +130,20 @@ body {
   border: none;
   outline: none;
   background: #ffe6f0;
-  color: #ff5da2;
+  color: #ff3b7f;  /* Changed text color */
   font-size: 1rem;
-  box-shadow: 0 0 10px #ffd1ec;
+  box-shadow: 0 0 10px #ffb2d1;  /* Changed shadow color */
   transition: 0.3s ease;
 }
 
 .search-bar input::placeholder {
-  color: #383536;
+  color: #4b4747;  /* Lighter placeholder color */
   font-style: italic;
 }
 
 .search-bar button {
   padding: 10px 20px;
-  background: linear-gradient(145deg, #ff8ecf, #ffb5e6);
+  background: linear-gradient(145deg, #ff6db3, #ff99d1);  /* Changed gradient */
   border: none;
   border-radius: 50px;
   color: white;
@@ -159,9 +155,9 @@ body {
 }
 
 .search-bar button:hover {
-  background: linear-gradient(145deg, #ffaad4, #ffc4e8);
+  background: linear-gradient(145deg, #ff8fd2, #ffb3e3);  /* Changed hover gradient */
   transform: scale(1.05);
-  box-shadow: 0 0 15px #ffd0ec;
+  box-shadow: 0 0 15px #ffb7d6;  /* Changed hover shadow */
 }
 
 /* Section Title */
@@ -169,8 +165,8 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin: 40px 0 20px;
-  color: #08f7fe;
-  text-shadow: 0 0 5px #08f7fe;
+  color: #00f7ff;  /* Changed title color */
+  text-shadow: 0 0 5px #00f7ff;
 }
 
 /* Recipe Cards */
@@ -183,9 +179,9 @@ body {
 }
 
 .recipe-card {
-  background: #1a1a1a;
+  background: #000000;  /* Darker background */
   border-radius: 20px;
-  box-shadow: 0 0 15px #08f7fe;
+  box-shadow: 0 0 15px #00f7ff;  /* Changed shadow color */
   width: 250px;
   text-align: center;
   padding: 15px;
@@ -194,7 +190,7 @@ body {
 
 .recipe-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #f806cc;
+  box-shadow: 0 0 20px #ff2a94;  /* Changed hover shadow color */
 }
 
 .recipe-card img {
@@ -206,7 +202,7 @@ body {
 
 .recipe-card h3 {
   margin: 10px 0;
-  color: #fe53bb;
+  color: #f893ce;  /* Changed title color */
 }
 
 .recipe-card p {
@@ -226,12 +222,12 @@ body {
 
 .footer a {
   text-decoration: none;
-  color: #08f7fe;
+  color: #00f7ff;  /* Changed link color */
   transition: 0.3s ease;
 }
 
 .footer a:hover {
-  color: #fe53bb;
+  color: #ff4cb3;  /* Changed hover color */
   transform: scale(1.05);
 }
 
