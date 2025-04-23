@@ -68,8 +68,9 @@ body {
 /* Hero Section */
 .hero {
   height: 50vh;
-  background-image: url('https://i.pinimg.com/736x/17/c1/5a/17c15acb4661f8557d20319a8376f70e.jpg');
-  background-size: cover;
+  background-image: url('https://i.pinimg.com/736x/63/a7/e0/63a7e028de1cc91028bc1c4909836268.jpg');
+  background-size:auto;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
