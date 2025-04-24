@@ -10,7 +10,7 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 - 🔍 **Recipe Pages**: Discover curated vegetarian recipes like **Dal Tadka** and **Donuts**, each with their own HTML page.
 - 🌸 **Themed UI**: Elegant neon pastel colors and soft animations to make browsing feel peaceful and fun.
 - 💬 **Review Section**: Users can read and submit feedback via the `review.html` page.
-- 📧 **Popup Contact Form**: Interact via `contactus.html` with footer integration.
+- 📧 **Popup Contact Form**: Interact via `contact.html` with footer integration.
 - ⚡ **Smooth Animations**: Enhanced interactivity using custom CSS and JavaScript.
 
 ---
@@ -20,10 +20,10 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 Here’s a breakdown of your main files:
 
 ### 📄 HTML Pages
-- `INDEX.HTML` — Homepage with navigation and main UI
-- `contactus.html` — Contact form with pop-up & footer
+- `index.HTML` — Homepage with navigation and main UI
+- `contact.html` — Contact form with pop-up & footer
 - `dal_tadka.html` — Recipe page for Dal Tadka
-- `donuts.html` — Recipe page for Donuts
+- `donut.html` — Recipe page for Donuts
 - `review.html` — Review/feedback page
 
 ### 🎨 CSS Styles
