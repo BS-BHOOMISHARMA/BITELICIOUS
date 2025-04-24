@@ -1,1 +1,102 @@
-css file
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/black-linen.png');
+    background-color: #000;
+    color: #f0e6f6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: #111;
+    padding: 15px 30px;
+    box-shadow: 0 0 10px #ff6ec7;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #ffccff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #ffeeff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6ec7;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),    url('https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Shaheen_Ali/Dal_Tadka.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffe6f7;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 20px #ffb6c1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7;
+  }
+  
+  .hero h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #cafffd;
+    font-style: italic;
+    text-shadow: 0 0 8px #7fffd4;
+  }
+  
+  h2 {
+    color: #ffb3ec;
+    text-shadow: 0 0 5px #ff69b4;
+    padding-left: 20px;
+  }
+  
+  ul, ol {
+    margin: 20px;
+    padding-left: 40px;
+  }
+  
+  .recipe-info p {
+    padding: 10px 20px;
+    color: #ffd6f6;
+    font-size: 1rem;
+  }
+  
+  .faq-box {
+    background-color: #1a1a1a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ff80bf;
+    color: #f9eaff;
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: #0d0d0d;
+    color: #ffe4f7;
+    font-size: 0.9rem;
+  }
+  
