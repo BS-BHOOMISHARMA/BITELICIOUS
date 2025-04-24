@@ -1,6 +1,7 @@
 # BITELICIOUS
 SCM Project 
 # 🍓 Bitelicious - Recipe Finder Website
+https://bs-bhoomisharma.github.io/BITELICIOUS/
 
 **Bitelicious** is a beautifully designed vegetarian recipe website built with love and pastels! From hearty meals like Dal Tadka to sweet treats like Donuts, discover delicious recipes through a soft, aesthetic interface that’s as delightful as the food itself 💕
 
