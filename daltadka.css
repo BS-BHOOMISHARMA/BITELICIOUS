@@ -1,108 +1,193 @@
+/* Reset and base font */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: url('https://www.transparenttextures.com/patterns/black-linen.png');
-    background-color: #000;
-    color: #f0e6f6;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  .navbar {
-    background-color: #111;
-    padding: 15px 30px;
-    box-shadow: 0 0 10px #ff6ec7;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    color: #ffccff;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: #ffeeff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #ff6ec7;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),    url('https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Shaheen_Ali/Dal_Tadka.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ffe6f7;
-    border-radius: 20px;
-    margin: 20px;
-    box-shadow: 0 0 20px #ffb6c1;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7;
-  }
-  
-  .hero h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #cafffd;
-    font-style: italic;
-    text-shadow: 0 0 8px #7fffd4;
-  }
-  
-  h2 {
-    color: #ffb3ec;
-    text-shadow: 0 0 5px #ff69b4;
-    padding-left: 20px;
-  }
-  
-  ul, ol {
-    margin: 20px;
-    padding-left: 40px;
-  }
-  
-  .recipe-info p {
-    padding: 10px 20px;
-    color: #ffd6f6;
-    font-size: 1rem;
-  }
-  
-  .faq-box {
-    background-color: #1a1a1a;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #ff80bf;
-    color: #f9eaff;
-  }
-  
-  footer {
-    padding: 20px;
-    background-color: #0d0d0d;
-    color: #ffe4f7;
-    font-size: 0.9rem;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1a1a1a;
+  color: #f8d6e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ffc0cb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffe5ec;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #ffb6c1;
+  color: #1a1a1a;
+}
+
+/* Hero Section with background image */
+.hero {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbELsfXDIn5s9SmQLf1SnXZ9a-iJrkl59S5HAS8I7t3vrt1lpiBZ_jp0TQHKPVNB-xJ8&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  color: #ffd6f0;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #ffe9f7;
+}
+
+/* Recipe info */
+.recipe-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.recipe-info p {
+  font-size: 1rem;
+  margin: 0;
+  color: #ffd1dd;
+}
+
+/* Section Headings */
+h2 {
+  color: #ff99cc;
+  margin-top: 40px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+/* Lists */
+ul, ol {
+  margin: 15px 40px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Review cards */
+article {
+  background-color: #292929;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #ff7aa2;
+  border-radius: 8px;
+  color: #fbdde9;
+}
+
+/* FAQ box */
+.faq-box {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffbad2;
+  margin-top: 20px;
+}
+
+section p strong {
+  color: #ffbedf;
+}
+
+/* Font Awesome Icon colors */
+.fa-users, .fa-clock, .fa-hourglass-half, .fa-fire {
+  margin-right: 8px;
+  color: #ffdce8;
+}
+.footer {
+  background-color: #2a2a2a;
+  color: #ffdce8;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  border-top: 2px solid #ffbad2;
+  box-shadow: 0 -4px 12px rgba(255, 182, 193, 0.2);
+  border-radius: 20px 20px 0 0;
+  font-size: 0.95rem;
+}
+
+.footer strong {
+  color: #ff99cc;
+  font-weight: 600;
+}
+
+.footer a {
+  color: #ffb6c1;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ffcce0;
+}
+
