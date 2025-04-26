@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   // Navbar scroll effect
   const navbar = document.querySelector('.navbar');
@@ -64,18 +65,23 @@ document.addEventListener('DOMContentLoaded', function () {
       this.style.transform = 'scale(1)';
       this.style.boxShadow = '0 0 15px #08f7fe';
     });
-
-    card.addEventListener('click', function () {
+    card.addEventListener('click', function (e) {
+      // Prevent alert if the card is wrapped in a link
+      if (this.closest('a')) return;
+    
       const recipeName = this.querySelector('h3')?.textContent || 'recipe';
       alert(`Recipe details for ${recipeName} coming soon!`);
     });
+    
   });
 
   // Smooth scroll for nav links
-  document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  // Smooth scroll only for anchor links
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    if (targetId && targetId.startsWith('#')) {
       e.preventDefault();
-      const targetId = this.getAttribute('href');
       if (targetId === '#') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
@@ -84,8 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
           targetElement.scrollIntoView({ behavior: 'smooth' });
         }
       }
-    });
+    }
   });
+});
 
   // Lazy load images
   const lazyImages = document.querySelectorAll('.recipe-card img');
