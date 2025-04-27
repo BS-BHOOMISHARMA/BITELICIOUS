@@ -7,7 +7,7 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 
 ## 🌟 Key Features
 
-- 🔍 **Recipe Pages**: Discover curated vegetarian recipes like **Dal Tadka** and **Donuts**, each with their own HTML page.
+- 🔍 **Recipe Pages**: Discover curated vegetarian recipes like **Dal Tadka**, **Donuts**, and **Guacamole** and mny more, each with their own page.
 - 🌸 **Themed UI**: Elegant neon pastel colors and soft animations to make browsing feel peaceful and fun.
 - 💬 **Review Section**: Users can read and submit feedback via the `review.html` page.
 - 📧 **Popup Contact Form**: Interact via `contact.html` with footer integration.
@@ -17,24 +17,28 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 
 ## 🗂️ File Overview
 
-Here’s a breakdown of your main files:
 
 ### 📄 HTML Pages
-- `index.HTML` — Homepage with navigation and main UI
-- `contact.html` — Contact form with pop-up & footer
-- `dal_tadka.html` — Recipe page for Dal Tadka
-- `donut.html` — Recipe page for Donuts
-- `review.html` — Review/feedback page
+- `index.html` — Homepage
+- `contact.html` — Contact form
+- `dal_tadka.html` — Dal Tadka recipe
+- `donuts.html` — Donuts recipe
+- `guacamole.html` — Guacamole recipe
+- `review.html` — Review/Feedback page
+- `about.html` — About page
 
 ### 🎨 CSS Styles
-- `styles.css` — Base styles and background setup
-- `contact.css` — Styling for the contact form
-- `donut.css` — Donut-specific styling
-- `reviewpage.css` — Styling & animations for review section
+- `styles.css` — Base styles
+- `contact.css` — Contact page styles
+- `daltadka.css` — Dal Tadka page styles
+- `donut.css` — Donuts page styles
+- `guacamole.css` — Guacamole page styles
+- `review.css` — Review page styles
+- `about.css` — About page styles
 
 ### ⚙️ JavaScript
-- `script.js` — Core JavaScript (including bug fixes)
-- `review.js` — Handles review page interactions
+- `script.js` — Main interactions
+- `review.js` — Review functionalit
 
 ---
 
@@ -53,7 +57,7 @@ Huge thanks to all the amazing contributors to this project!
 - 🍽️ Add more recipes & categories
 - ⭐ Save your favorite recipes
 - 📱 Mobile optimization tweaks
-- 🌗 Dark mode support
+- 🔄 Add **Toggle Mode** (light/dark theme switching)
 
 ---
 
