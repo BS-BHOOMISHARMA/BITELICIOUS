@@ -1,32 +1,37 @@
-/* Fonts */
-h1, h2 {
-  font-family: 'Pacifico', cursive;  /* Changed to Pacifico font */
-}
 
-body, p, input, button {
-  font-family: 'Poppins', sans-serif;  /* Changed to Poppins font */
-}
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* Default body and general text */
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: 'Dancing Script', cursive;
-  background: #2c2a2a;  /* Darker background */
-  color: #e8e8e8;  /* Lighter text color */
-  padding-bottom: 40px;
+  background: #040018;
+  color: #e8e8e8;
+  padding-bottom: 50px;
+}/* Fonts */
+h1, h2 {
+  font-family: 'Quintessential', cursive;  /* Changed to Pacifico font */
 }
+
 
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111111;  /* Darker navbar background */
+  background: ##040018; 
   padding: 15px 30px;
   box-shadow: 0 0 10px #00f7ff;  /* Changed shadow color */
   border-radius: 0 0 20px 20px;
 }
 
 .navbar .logo {
+  font-family: 'Rye', cursive;
   font-size: 3rem;
   font-weight: bold;
   color: #00f7ff;  /* Changed logo color */
@@ -39,10 +44,13 @@ body {
 }
 
 .nav-links li a {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: #ff2a94;  /* Changed text color */
+  color: #f5a0cb;  /* Changed text color */
   font-weight: 700;
   position: relative;
+  transition: 0.3s ease;
+
 }
 
 .nav-links li a::before {
@@ -50,9 +58,9 @@ body {
   position: absolute;
   width: 0;
   height: 3px;
-  background-color: #ff4cb3;  /* Changed hover color */
+  background-color: #e6a7cc;  /* Changed hover color */
   left: 0;
-  bottom: -5px;
+  bottom: -7px;
   transition: width 0.3s ease;
 }
 
@@ -61,18 +69,16 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #ff4cb3;  /* Changed hover color */
+  color: #eb6c6c;  /* Changed hover color */
   transform: scale(1.05);
 }
 
 /* Hero Section */
 .hero {
-  height: 50vh;
-  background-image: url('https://i.pinimg.com/736x/63/a7/e0/63a7e028de1cc91028bc1c4909836268.jpg');
-  background-size:auto;
-  background-size:cover;
+  height: 400px;
+  background-image: url('https://i.pinimg.com/736x/9c/96/ba/9c96ba174df687c21ba8ec31f8ef3bd1.jpg');
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,14 +137,14 @@ body {
   border: none;
   outline: none;
   background: #ffe6f0;
-  color: #ff3b7f;  /* Changed text color */
+  color:#000000;  /* Changed text color */
   font-size: 1rem;
   box-shadow: 0 0 10px #ffb2d1;  /* Changed shadow color */
   transition: 0.3s ease;
 }
 
 .search-bar input::placeholder {
-  color: #4b4747;  /* Lighter placeholder color */
+  color: #03082a;  /* Lighter placeholder color */
   font-style: italic;
 }
 
@@ -187,11 +193,13 @@ body {
   text-align: center;
   padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .recipe-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #ff2a94;  /* Changed hover shadow color */
+  box-shadow: 0 0 20px #ff2a94;/*hover shadow*/
+  background: #000000;/* Changed  color */
 }
 
 .recipe-card img {
@@ -202,11 +210,13 @@ body {
 }
 
 .recipe-card h3 {
+  font-family: 'Ubuntu', sans-serif;/*added font*/
   margin: 10px 0;
   color: #f893ce;  /* Changed title color */
 }
 
 .recipe-card p {
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   color: #dcdcdc;
 }
@@ -217,7 +227,7 @@ body {
   margin-top: 60px;
   font-size: 1.0rem;
   color: #ffffff;
-  background-color: #181818;
+  background-color: #0c0c0c;
   padding: 20px;
 }
 
