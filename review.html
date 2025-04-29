@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BITELICIOUS | Customer Reviews</title>
+<script src="review.js"></script>
   <link rel="stylesheet" href="review.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -52,6 +53,7 @@
   <section id="all-reviews">
     <h2 class="neon-glow">🗣️ All Customer Reviews</h2>
      
+    <!-- Existing Reviews -->
     <div class="review">
         <p>“Made the coconut ladoos last night and WOW – they vanished in minutes. Please drop a pistachio version next!”</p>
         <p><strong>– Priya B.</strong></p>
@@ -76,31 +78,13 @@
         <p>⭐⭐⭐⭐⭐</p>
       </div>
       
-    <div class="review fade-in delay-1">
-      <p>“Decadent and moist! 😍 These chocolate brownies are pure indulgence! I love how fudgy they are — perfect for my chocolate cravings.”</p>
-      <p><strong>– Sanjana D.</strong></p>
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-    </div>
-
-    <div class="review fade-in delay-2">
-      <p>“Tried your no-bake cheesecake. OMG. It was heavenly and so easy to make!”</p>
-      <p><strong>– Rhea P.</strong></p>
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-    </div>
-
-    <div class="review fade-in delay-3">
-      <p>“This Dal Tadka recipe is spot on! Reminded me of dhaba-style flavors — smoky, rich, and comforting.”</p>
-      <p><strong>– Meena V.</strong></p>
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-    </div>
-
-    <!-- You can repeat more reviews as needed -->
+    <!-- New reviews will appear here after submission -->
   </section>
 
   <!-- Review Submission -->
   <section id="submit-review" class="fade-in">
     <h2 class="neon-glow">🖋️ Share Your BITELICIOUS Experience</h2>
-    <form action="#" method="post" class="form-animate">
+    <form id="review-form" class="form-animate">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
 
@@ -132,5 +116,6 @@
     <p>Made with <span class="pulse-heart">💖</span> by OUR TEAM | &copy; 2025 BITELICIOUS</p>
   </footer>
 
+  <script src="reviews.js"></script>
 </body>
 </html>
