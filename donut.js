@@ -64,6 +64,35 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+// Animate sections on scroll
+  const sections = document.querySelectorAll('section, h2, ul, ol, article');
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+  
+  sections.forEach(section => {
+    section.classList.add('hidden');
+    observer.observe(section);
+  });
+  
+  // FAQ Accordion
+  const faqs = document.querySelectorAll('.faq-box p');
+  
+  faqs.forEach(faq => {
+    faq.style.cursor = 'pointer';
+    faq.addEventListener('click', () => {
+      faq.classList.toggle('active-faq');
+      faq.nextElementSibling?.classList.toggle('show-answer');
+    });
+  });
+  
   
   
   
