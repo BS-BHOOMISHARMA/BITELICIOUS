@@ -29,5 +29,41 @@ document.querySelectorAll('.nav-links a').forEach(link => {
       setTimeout(() => welcome.remove(), 1000);
     }, 4000); // stays for 4 sec
   });
+// Create and style the back-to-top button
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.innerHTML = '⬆️';
+  backToTopBtn.className = 'back-to-top';
+  document.body.appendChild(backToTopBtn);
+  
+  Object.assign(backToTopBtn.style, {
+    position: 'fixed',
+    bottom: '30px',
+    right: '30px',
+    padding: '10px 15px',
+    borderRadius: '50%',
+    backgroundColor: '#1fe7e7',
+    color: '#000',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '20px',
+    display: 'none',
+    animation: 'bounce 2s infinite',
+    zIndex: '999'
+  });
+  
+  // Show/hide back-to-top button
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+  
+  // Scroll to top
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  
   
   
