@@ -29,7 +29,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
       setTimeout(() => welcome.remove(), 1000);
     }, 4000); // stays for 4 sec
   });
-// Create and style the back-to-top button
+  
+  // Create and style the back-to-top button
   const backToTopBtn = document.createElement('button');
   backToTopBtn.innerHTML = '⬆️';
   backToTopBtn.className = 'back-to-top';
@@ -64,7 +65,8 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-// Animate sections on scroll
+  
+  // Animate sections on scroll
   const sections = document.querySelectorAll('section, h2, ul, ol, article');
   
   const observer = new IntersectionObserver(entries => {
@@ -92,7 +94,4 @@ document.querySelectorAll('.nav-links a').forEach(link => {
       faq.nextElementSibling?.classList.toggle('show-answer');
     });
   });
-  
-  
-  
   
