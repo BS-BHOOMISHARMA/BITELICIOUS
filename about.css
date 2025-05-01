@@ -50,7 +50,7 @@ body {
   
   /* Main Section */
   main {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(6, 5, 5, 0.6);
     padding: 50px;
     margin: 50px auto;
     max-width: 900px;
@@ -69,37 +69,44 @@ body {
     font-size: 1.1em;
     margin-bottom: 20px;
   }
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px;
-    color: #ffc3ec;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-top: 1px solid #ff8ffb;
-  }
-  /* Fade-in animation */
+  main section ul li {
+  color: #e0e0ff;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #e8dfe5;
+  background-color: rgba(9, 9, 9, 0.9);
+  border-top: 1px solid #ff8ffb;
+}
+/* Fade-in animation */
 .fade-in {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 1s ease-in-out;
+opacity: 1;
+transform: translateY(0);
+transition: all 1s ease-in-out;
 }
 main section {
-  opacity: 0;
-  transform: translateY(30px);
+opacity: 0;
+transform: translateY(30px);
 }
 /* Confetti styles */
 .confetti {
-  position: fixed;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  animation: fall linear forwards;
-  z-index: 9999;
+position: fixed;
+top: 0;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+animation: fall linear forwards;
+z-index: 9999;
 }
 @keyframes fall {
-  to {
-    transform: translateY(100vh) rotate(720deg);
-    opacity: 0;
-  }
+to {
+  transform: translateY(100vh) rotate(720deg);
+  opacity: 0;
+}
 }
