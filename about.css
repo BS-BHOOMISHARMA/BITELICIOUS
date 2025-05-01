@@ -69,13 +69,12 @@ body {
     font-size: 1.1em;
     margin-bottom: 20px;
   }
-  
   /* Footer */
   footer {
     text-align: center;
     padding: 20px;
     color: #ffc3ec;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     border-top: 1px solid #ff8ffb;
   }
   /* Fade-in animation */
@@ -88,7 +87,6 @@ main section {
   opacity: 0;
   transform: translateY(30px);
 }
-
 /* Confetti styles */
 .confetti {
   position: fixed;
