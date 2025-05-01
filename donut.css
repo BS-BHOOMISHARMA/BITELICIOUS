@@ -210,3 +210,31 @@ section p strong {
     font-weight: bold;
     transition: 0.3s;
   }
+  .footer {
+  background-color: #2a2a2a;
+  color: #ffdce8;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  border-top: 2px solid #ffbad2;
+  box-shadow: 0 -4px 12px rgba(255, 182, 193, 0.2);
+  border-radius: 20px 20px 0 0;
+  font-size: 0.95rem;
+}
+
+.footer strong {
+  color: #ff99cc;
+  font-weight: 600;
+}
+
+.footer a {
+  color: #ffb6c1;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ffcce0;
+}
