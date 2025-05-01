@@ -1,0 +1,212 @@
+/* Reset and base font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #060606;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #1fe7e7;
+  color: #000;
+}
+
+/* Hero Section with background image */
+.hero {
+  background-image: url('https://media.istockphoto.com/id/686623972/photo/preparing-homemade-donuts.jpg?b=1&s=612x612&w=0&k=20&c=FTlJvPj4UPxBrLXGl4SBdfcvlbk1qesCL2zmwBwYh08=');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #f1e9e9;
+}
+
+/* Recipe info */
+.recipe-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the spacing between details */
+  margin-bottom: 30px;
+}
+
+.recipe-info p {
+  font-size: 1rem;
+  margin: 0;
+  color: #ddd;
+}
+
+
+
+/* Section Headings */
+h2 {
+  color: #da6aad;
+  margin-top: 40px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+/* Lists */
+ul, ol {
+  margin: 15px 40px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Review cards */
+article {
+  background-color: #1e1e1e;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #ee7a78;
+  border-radius: 8px;
+}
+
+/* FAQ box */
+.faq-box {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  margin-top: 20px;
+}
+
+section p strong {
+  color: #e5a6e1;
+}
+
+/* Font Awesome Icon colors */
+.fa-users, .fa-clock, .fa-hourglass-half, .fa-fire {
+  margin-right: 8px;
+  color: #ffffff;
+}
+/* Popup welcome */
+.welcome-popup {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50px);
+    background: #e2aeea;
+    color: #111;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 10000;
+  }
+  
+  /* Bounce animation for back-to-top */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+   /* Section animation */
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* FAQ accordion */
+  .active-faq {
+    color: #1fe7e7;
+    font-weight: bold;
+    transition: 0.3s;
+  }

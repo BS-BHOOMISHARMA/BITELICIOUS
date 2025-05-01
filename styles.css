@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Default body and general text */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #040018;
+  color: #e8e8e8;
+  padding-bottom: 50px;
+}/* Fonts */
+h1, h2 {
+  font-family: 'Quintessential', cursive;  /* Changed to Pacifico font */
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: ##040018; 
+  padding: 15px 30px;
+  box-shadow: 0 0 10px #00f7ff;  /* Changed shadow color */
+  border-radius: 0 0 20px 20px;
+}
+
+.navbar .logo {
+  font-family: 'Rye', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00f7ff;  /* Changed logo color */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links li a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #f5a0cb;  /* Changed text color */
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s ease;
+
+}
+
+.nav-links li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #e6a7cc;  /* Changed hover color */
+  left: 0;
+  bottom: -7px;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::before {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #eb6c6c;  /* Changed hover color */
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  height: 400px;
+  background-image: url('https://i.pinimg.com/736x/9c/96/ba/9c96ba174df687c21ba8ec31f8ef3bd1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);  /* Darker overlay */
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #00f7ff;  /* Changed color */
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+.hero p {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+/* Lovely Fancy Font Style */
+.lovely-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #ff4cb3;  /* Changed color */
+  text-align: center;
+  margin: 40px auto 20px;
+  text-shadow: 2px 2px 10px #00f7ff;  /* Changed shadow color */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: default;
+}
+
+.lovely-text:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 15px #ff2a94;  /* Changed hover shadow */
+}
+
+/* Search Bar */
+.search-bar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-bar input {
+  padding: 12px 20px;
+  width: 260px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #ffe6f0;
+  color:#000000;  /* Changed text color */
+  font-size: 1rem;
+  box-shadow: 0 0 10px #ffb2d1;  /* Changed shadow color */
+  transition: 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #03082a;  /* Lighter placeholder color */
+  font-style: italic;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #ff6db3, #ff99d1);  /* Changed gradient */
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 0 12px #ffb6d9;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: linear-gradient(145deg, #ff8fd2, #ffb3e3);  /* Changed hover gradient */
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffb7d6;  /* Changed hover shadow */
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 20px;
+  color: #00f7ff;  /* Changed title color */
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+/* Recipe Cards */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.recipe-card {
+  background: #000000;  /* Darker background */
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00f7ff;  /* Changed shadow color */
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff2a94;/*hover shadow*/
+  background: #000000;/* Changed  color */
+}
+
+.recipe-card img {
+  border-radius: 15px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  font-family: 'Ubuntu', sans-serif;/*added font*/
+  margin: 10px 0;
+  color: #f893ce;  /* Changed title color */
+}
+
+.recipe-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #dcdcdc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.0rem;
+  color: #ffffff;
+  background-color: #0c0c0c;
+  padding: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #00f7ff;  /* Changed link color */
+  transition: 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff4cb3;  /* Changed hover color */
+  transform: scale(1.05);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .lovely-text {
+    font-size: 2.5rem;
+  }
+
+  .search-bar input {
+    width: 180px;
+  }
+
+  .search-bar button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
