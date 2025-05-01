@@ -1,0 +1,24 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node modules (if you ever use npm for tools like live-server or bundlers)
+node_modules/
+
+# Logs
+*.log
+
+# Env files (if you ever use environment variables)
+.env
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Build files (if using tools like Webpack later)
+dist/
+build/
