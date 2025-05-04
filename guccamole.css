@@ -5,15 +5,15 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  
+
 body {
     background: #111;
     color: #eee;
     line-height: 1.6;
     padding: 20px;
-    animation: fadeIn 2s ease-out; /* Fade in body */
+    animation: fadeIn 2s ease-out;
 }
-  
+
 /* Welcome Popup Styles */
 .welcome-popup {
     display: flex;
@@ -26,7 +26,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
-    animation: fadeInPopup 1.5s ease-out; /* Popup fade-in animation */
+    animation: fadeInPopup 1.5s ease-out;
 }
 
 .welcome-popup .popup-content {
@@ -35,7 +35,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    animation: slideUp 1s ease-in-out; /* Popup content slide-up animation */
+    animation: slideUp 1s ease-in-out;
 }
 
 .welcome-popup button {
@@ -52,10 +52,9 @@ body {
 /* Hero Section with background image */
 .hero {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYLZp6FlVB82UdZmVnYN1Ic21GVxAoMaA4g&s');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 300px;
-    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,9 +63,9 @@ body {
     position: relative;
     margin-bottom: 50px;
     opacity: 0;
-    animation: fadeIn 2s forwards; /* Hero section fade-in */
+    animation: fadeIn 2s forwards;
 }
-  
+
 .hero::after {
     content: '';
     position: absolute;
@@ -74,28 +73,119 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-  
+
 .hero-content {
     position: relative;
     z-index: 2;
 }
-  
+
 .hero h1 {
     font-size: 4rem;
     font-weight: 900;
     margin: 0;
     text-shadow: 2px 2px 8px #000;
     opacity: 0;
-    animation: fadeInText 2s forwards; /* Hero text fade-in */
+    animation: fadeInText 2s forwards;
 }
-  
+
 .hero h3 {
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 10px;
     color: #f1e9e9;
+}
+
+/* Recipe Info Section */
+.recipe-info {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.recipe-info p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Ingredients Section */
+.ingredients {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.ingredients h2 {
+    color: #da6aad;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Instructions Section */
+.instructions {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.instructions h2 {
+    color: #da6aad;
+    margin-bottom: 15px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.reviews article {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-left: 4px solid #ee7a78;
+    border-radius: 8px;
+}
+
+/* FAQ Section */
+.faq-box {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.faq-box p {
+    margin-bottom: 15px;
 }
 
 /* Button hover effect */
@@ -114,47 +204,26 @@ body {
 
 #sendRecipeButton:hover {
     background-color: #f44a4a;
-    transform: scale(1.1); /* Button scale animation */
+    transform: scale(1.1);
 }
 
-/* Animation for fade-in effect */
+/* Keyframe animations */
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-/* Popup fade-in effect */
-@keyframes fadeInPopup {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Slide-up animation for popup content */
-@keyframes slideUp {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Fade-in for hero text */
 @keyframes fadeInText {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInPopup {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
