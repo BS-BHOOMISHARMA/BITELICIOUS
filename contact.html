@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Recipe Finder</title>
-  <link rel="stylesheet" href="contact.css"> <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
     <h1>Contact Us</h1>
     <p>If you have any questions or suggestions, feel free to get in touch with us!</p>
 
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain" onsubmit="showPopup(); return false;">
+    <form id="contactForm" action="#" method="post">
       <table>
         <tr>
           <td><label for="name">Name:</label></td>
@@ -40,19 +40,6 @@
     </div>
   </div>
 
-  
-
-  <script>
-    // Show Popup
-    function showPopup() {
-      document.getElementById('popup').style.display = 'flex';
-    }
-
-    // Close Popup
-    function closePopup() {
-      document.getElementById('popup').style.display = 'none';
-    }
-  </script>
-
+  <script src="contact.js"></script>
 </body>
 </html>
