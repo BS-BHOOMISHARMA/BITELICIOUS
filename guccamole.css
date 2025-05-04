@@ -11,7 +11,14 @@ body {
     color: #eee;
     line-height: 1.6;
     padding: 20px;
+    overflow-y: scroll;  /* Enables vertical scrollbar */
+    height: 100vh;  /* Ensure the content fits in the view */
     animation: fadeIn 2s ease-out;
+}
+
+/* Smooth Scroll for Navigation */
+html {
+    scroll-behavior: smooth;  /* Adds smooth scrolling for anchor links */
 }
 
 /* Welcome Popup Styles */
