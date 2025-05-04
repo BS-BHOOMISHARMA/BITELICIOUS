@@ -1,4 +1,4 @@
-/* Global font and reset */
+/* Reset and base font */
 * {
   margin: 0;
   padding: 0;
@@ -11,57 +11,60 @@ body {
   color: #eee;
   line-height: 1.6;
   padding: 20px;
-  overflow-y: scroll;  /* Enables vertical scrollbar */
-  height: 100vh;  /* Ensure the content fits in the view */
-  animation: fadeIn 2s ease-out;
 }
 
-/* Smooth Scroll for Navigation */
-html {
-  scroll-behavior: smooth;  /* Adds smooth scrolling for anchor links */
-}
-
-/* Welcome Popup Styles */
-.welcome-popup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-  animation: fadeInPopup 1.5s ease-out;
-}
-
-.welcome-popup .popup-content {
-  background: #333;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  animation: slideUp 1s ease-in-out;
-}
-
-.welcome-popup button {
-  margin-top: 20px;
+/* Navbar */
+.navbar {
+  background-color: #060606;
+  border-radius: 12px;
   padding: 10px 20px;
-  background-color: #ff6b6b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  margin-bottom: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #1fe7e7;
+  color: #000;
 }
 
 /* Hero Section with background image */
 .hero {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYLZp6FlVB82UdZmVnYN1Ic21GVxAoMaA4g&s');
-  background-size: cover;
-  background-position: center;
+  background-size:contain;
+  background-position:center;
   height: 300px;
+  width:auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +72,6 @@ html {
   color: #fff;
   position: relative;
   margin-bottom: 50px;
-  opacity: 0;
-  animation: fadeIn 2s forwards;
 }
 
 .hero::after {
@@ -80,7 +81,7 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .hero-content {
@@ -93,8 +94,6 @@ html {
   font-weight: 900;
   margin: 0;
   text-shadow: 2px 2px 8px #000;
-  opacity: 0;
-  animation: fadeInText 2s forwards;
 }
 
 .hero h3 {
@@ -104,133 +103,64 @@ html {
   color: #f1e9e9;
 }
 
-/* Recipe Info Section */
+/* Recipe info */
 .recipe-info {
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  border: 1px solid #333;
-  animation: fadeIn 2s ease-out;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the spacing between details */
+  margin-bottom: 30px;
 }
 
 .recipe-info p {
   font-size: 1rem;
+  margin: 0;
   color: #ddd;
-  margin-bottom: 10px;
 }
 
-/* Ingredients Section */
-.ingredients {
-  background-color: #2e2e2e;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  border: 1px solid #333;
-  animation: fadeIn 2s ease-out;
-}
 
-.ingredients h2 {
+
+/* Section Headings */
+h2 {
   color: #da6aad;
-  margin-bottom: 15px;
+  margin-top: 40px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+/* Lists */
+ul, ol {
+  margin: 15px 40px;
 }
 
-ul li {
+ul li, ol li {
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
-/* Instructions Section */
-.instructions {
-  background-color: #2e2e2e;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  border: 1px solid #333;
-  animation: fadeIn 2s ease-out;
-}
-
-.instructions h2 {
-  color: #da6aad;
-  margin-bottom: 15px;
-}
-
-ol {
-  margin-left: 20px;
-}
-
-/* Reviews Section */
-.reviews {
-  background-color: #2e2e2e;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  border: 1px solid #333;
-  animation: fadeIn 2s ease-out;
-}
-
-.reviews article {
-  margin-bottom: 15px;
-  padding: 15px;
+/* Review cards */
+article {
   background-color: #1e1e1e;
+  padding: 15px;
+  margin: 10px 0;
   border-left: 4px solid #ee7a78;
   border-radius: 8px;
 }
 
-/* FAQ Section */
+/* FAQ box */
 .faq-box {
-  background-color: #2e2e2e;
+  background-color: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 40px;
   border: 1px solid #333;
-  animation: fadeIn 2s ease-out;
+  margin-top: 20px;
 }
 
-.faq-box p {
-  margin-bottom: 15px;
+section p strong {
+  color: #e5a6e1;
 }
 
-/* Button hover effect */
-#sendRecipeButton {
-  display: block;
-  margin: 30px auto;
-  padding: 15px 30px;
-  background-color: #ff6b6b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-#sendRecipeButton:hover {
-  background-color: #f44a4a;
-  transform: scale(1.1);
-}
-
-/* Keyframe animations */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes fadeInText {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes fadeInPopup {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes slideUp {
-  0% { transform: translateY(50px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+/* Font Awesome Icon colors */
+.fa-users, .fa-clock, .fa-hourglass-half, .fa-fire {
+  margin-right: 8px;
+  color: #ffffff;
 }
