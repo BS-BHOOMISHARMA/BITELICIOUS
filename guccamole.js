@@ -76,5 +76,29 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+// Section animations
+  const animatable = document.querySelectorAll('section, h2, ul, ol, article');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  
+  animatable.forEach(el => {
+    el.classList.add('hidden');
+    observer.observe(el);
+  });
+  
+  // Optional: Add cursor pointer and toggle to FAQs (if using toggle-style FAQs)
+  const faqs = document.querySelectorAll('.faq-box p strong');
+  faqs.forEach(faq => {
+    faq.style.cursor = 'pointer';
+    faq.addEventListener('click', () => {
+      faq.parentElement.classList.toggle('active-faq');
+    });
+  });
+  
   
   
