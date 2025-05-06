@@ -7,7 +7,7 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 
 ## 🌟 Key Features
 
-- 🔍 **Recipe Pages**: Discover curated vegetarian recipes like **Dal Tadka**, **Donuts**, and **Guacamole** and mny more, each with their own page.
+- 🔍 **Recipe Pages**: Discover curated vegetarian recipes like **Dal Tadka**, **Donuts**, and **Guacamole** and many more, each with their own page.
 - 🌸 **Themed UI**: Elegant neon pastel colors and soft animations to make browsing feel peaceful and fun.
 - 💬 **Review Section**: Users can read and submit feedback via the `review.html` page.
 - 📧 **Popup Contact Form**: Interact via `contact.html` with footer integration.
@@ -26,6 +26,8 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 - `guacamole.html` — Guacamole recipe
 - `review.html` — Review/Feedback page
 - `about.html` — About page
+- `gnochi.html`-gnocchi recipe
+
 
 ### 🎨 CSS Styles
 - `styles.css` — Base styles
@@ -35,16 +37,24 @@ https://bs-bhoomisharma.github.io/BITELICIOUS/
 - `guacamole.css` — Guacamole page styles
 - `review.css` — Review page styles
 - `about.css` — About page styles
+- `gnnochi.css` — Gnochi page styles
 
 ### ⚙️ JavaScript
 - `script.js` — Main interactions
 - `review.js` — Review functionalit
+- `contact.js` — Contact animations
+- `daltadka.js` — Dal Tadka animation
+- `donut.js` — Donuts page animation
+- `guacamole.js` — Guacamole animation
+- `about.js` — About page amination
+- `gnnochi.js` — Gnochi page animation
+
 
 ---
 
 ## 🧑‍💻 Contributors
 
-Huge thanks to all the amazing contributors to this project!
+Huge thanks to all the amazing contributors for this project!
 
 - 👩‍💻 [@BS-BHOOMISHARMA](https://github.com/BS-BHOOMISHARMA) *(Project Lead)*
 - 🧠 [@anjaligupta-27](https://github.com/anjaligupta-27)
