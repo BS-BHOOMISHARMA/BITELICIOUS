@@ -32,6 +32,33 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+/*added section
+  /* Animations for scroll reveal */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+  }
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Optional: FAQ toggle active */
+  .active-faq {
+    background-color: #292929;
+    border-left: 4px solid #e89be6;
+  }
+  
+  /* Bounce animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 
 .logo {
   font-size: 1.5rem;
