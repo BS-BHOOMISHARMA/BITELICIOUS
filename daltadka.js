@@ -59,5 +59,36 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+   // Animate elements on scroll
+  const sections = document.querySelectorAll('section, h2, ul, ol, article');
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+  
+  sections.forEach(section => {
+    section.classList.add('hidden');
+    observer.observe(section);
+  });
+  
+  // Basic FAQ toggle
+  const faqs = document.querySelectorAll('section p strong');
+  
+  faqs.forEach(strong => {
+    const parent = strong.closest('p');
+    if (parent && parent.nextElementSibling) {
+      parent.style.cursor = 'pointer';
+      parent.addEventListener('click', () => {
+        parent.classList.toggle('active-faq');
+        parent.nextElementSibling.classList.toggle('show-answer');
+      });
+    }
+  });
   
  
